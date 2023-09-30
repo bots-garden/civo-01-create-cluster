@@ -1,0 +1,11 @@
+image:
+  file: .gitpod.dockerfile
+
+tasks:
+  - name: initialize
+    init: |
+      # Install the Civo CLI
+      curl -sL https://civo.com/get | sh
+      sudo mv /tmp/civo /usr/local/bin/civo
+      
+
